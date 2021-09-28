@@ -1,0 +1,254 @@
+
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 2400px;
+    margin: 0 auto;
+}
+
+.ingress {
+    margin: 8rem auto 30vh auto;
+    text-align: center;
+    max-width: 40rem;
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: 900;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 3.5rem;
+    max-width: fit-content;
+}
+
+.margin {
+    margin: 5rem auto;
+}
+
+p {
+    width: 94%;
+    max-width: 30rem;
+    margin: 0rem auto;
+    margin-bottom: 10rem;
+    line-height: 1.4;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 30vh;
+}
+
+.parallax {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 5rem 0 5rem 0;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -20;
+}
+
+.parallax-small {
+    padding: 10rem 0 10rem 0;
+    max-width: 30rem;
+    margin: 2rem auto;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    color: white;
+    width: 100%;
+    min-height: 60vh;
+    background-color: black;
+    text-align: right;
+    overflow: hidden;
+}
+
+header h1 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background-color: black;
+    width: 94%;
+    max-width: 60rem;
+    font-weight: 700;
+    font-size: 6rem;
+    text-align: center;
+    animation-delay: 2s;
+    animation: 800ms rist infinite alternate;
+}
+
+@keyframes rist {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+  }
+
+header video {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-position: center;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-container {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.parallax h2 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin: 10vh auto;
+}
+
+.parallax p {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin: 70vh auto;
+}
+
+#bilde1 {
+    background-image: url('media/img/kryptomaskin.JPG');
+}
+
+img.contained {
+    width: 94%;
+    max-width: 30rem;
+    margin: 2rem auto;
+    font-size: 0.8rem;
+    display: block;
+}
+
+img.wide {
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+}
+
+img.half {
+    width: 50%;
+    height: auto;
+}
+
+img.left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+img.right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 1000ms ease;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.background-light {
+    background-color: white;
+    transition: 900ms ease;
+}
+
+.background-dark {
+    background-color: black;
+    transition: 900ms ease;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width:600px) {
+    body, html {
+        font-size: 12px;
+    }
+
+    .header-title {
+        position: static;
+        margin: 5rem auto;
+    }
+
+    .header-video {
+        display: none;
+    }
+}
+
+@media (min-width:801px) {
+    body, html {
+        font-size: 14px;
+    }
+
+    .header-title {
+        position: static;
+        margin: 5rem auto;
+    }
+
+    .header-video {
+        display: none;
+    }
+}
+
+@media (min-width:1025px) {
+    body, html {
+        font-size: 16px;
+    }
+
+    .header-title {
+        position: static;
+        margin: 5rem auto;
+    }
+
+    .header-video {
+        display: none;
+    }
+}
+
+@media (min-width:1281px) {
+    body, html {
+        font-size: 18px;
+    }
+
+    .header-title {
+        position: absolute;
+        top: 10%;
+        right: 0;
+    }
+
+    .header-video {
+        display: block;
+    }
+}
